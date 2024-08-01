@@ -7,6 +7,8 @@ from torch.optim.lr_scheduler import StepLR
 import torch.nn as nn
 import torch.nn.functional as F
 import matplotlib.pyplot as plt
+import os
+os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
 
 class VectorDataset(Dataset):
     def __init__(self, input_csv, output_csv):
